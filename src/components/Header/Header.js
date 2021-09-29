@@ -10,8 +10,8 @@ const Header = () => {
     return (
         <header>
             <ul>
-                <li><NavLink activeStyle={{ color: '#783076' }} style={linkStyle} to="/home">Home</NavLink></li>
-                <li><NavLink activeStyle={{ color: '#783076' }} style={linkStyle} to="/foods">Foods</NavLink></li>
+                <li><NavLink activeStyle={{ color: '#ce3b5d' }} style={linkStyle} to="/home">Home</NavLink></li>
+                <li><NavLink activeStyle={{ color: '#ce3b5d' }} style={linkStyle} to="/foods">Foods</NavLink></li>
             </ul>
         </header>
     );
