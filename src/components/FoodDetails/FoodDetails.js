@@ -10,12 +10,13 @@ const FoodDetails = () => {
         history.push('/404');
     }
 
-    const [food, setFood] = useState({});
+    const [food, setFood] = useState([]);
     useEffect(
         () => {
             const url = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${foodId}`;
-            fetch(url).then(r => r.json()).then(d => setFood(d.meals[0]));
-        }, [foodId])
+            fetch(url).then(r => r.json()).then(d => d.meals ? setFood(d.meals[0]) : history.push('/404'));
+        }, [foodId, history])
+
 
 
     const ingredients = {};
