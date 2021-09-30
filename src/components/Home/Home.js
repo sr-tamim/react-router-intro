@@ -7,7 +7,7 @@ const Home = () => {
             <section id="home" style={{ background: "url('/img/home-back.jpg')" }}>
                 <div id="home-cover">
                     <div id="home-container">
-                        <img src="./img/logo.png" alt='' />
+                        <div id="logo"><img src="./img/logo.png" alt='' /></div>
                         <h1>Delicious Food</h1>
                         <h3>
                             Food Quest has received numerous awards including: best lunch from the readers of eye magazine; best food from now magazine's critic's pick; best late night munchies from dineto, and has been recommended in toronto life's restaurant guide for best food.
