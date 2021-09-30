@@ -1,9 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router';
+import { useHistory, useParams } from 'react-router';
 import "./FoodDetails.css";
 
 const FoodDetails = () => {
     const { foodId } = useParams();
+
+    const history = useHistory();
+    if (isNaN(foodId)) {
+        history.push('/404');
+    }
 
     const [food, setFood] = useState({});
     useEffect(
