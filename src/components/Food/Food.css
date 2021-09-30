@@ -4,7 +4,6 @@
 .single-food{
     width: 300px;
     height: 300px;
-    margin: 30px;
     position: relative;
 }
 .single-food::before,.single-food::after{

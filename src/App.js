@@ -1,6 +1,7 @@
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
+import FoodDetails from './components/FoodDetails/FoodDetails';
 import Foods from './components/Foods/Foods';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
@@ -14,11 +15,14 @@ function App() {
           <Route exact path="/" >
             <Home />
           </Route>
-          <Route exact path="/home" >
+          <Route path="/home" >
             <Home />
           </Route>
           <Route exact path="/foods" >
             <Foods />
+          </Route>
+          <Route path="/foods/:foodId" >
+            <FoodDetails />
           </Route>
         </Switch>
       </Router>

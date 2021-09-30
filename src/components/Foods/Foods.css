@@ -52,6 +52,10 @@
   display: inline;
 }
 
+#searchField::placeholder{
+  color: #fdb4b4;
+}
+
 .specialMessage{
   text-align: center;
 }

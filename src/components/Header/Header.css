@@ -4,14 +4,13 @@ header{
     top: 0;
     left: 0;
     width: 100%;
+    padding: 20px 0;
 }
-
-header ul{
-    list-style: none;
-    padding: 0;
+header nav{
+    display: flex;
+    justify-content: center;
 }
-
-header li{
+header .link{
     display: inline-block;
     margin: 0 20px;
     text-decoration: none;

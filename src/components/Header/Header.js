@@ -9,10 +9,14 @@ const Header = () => {
     }
     return (
         <header>
-            <ul>
-                <li><NavLink activeStyle={{ color: '#ce3b5d' }} style={linkStyle} to="/home">Home</NavLink></li>
-                <li><NavLink activeStyle={{ color: '#ce3b5d' }} style={linkStyle} to="/foods">Foods</NavLink></li>
-            </ul>
+            <nav>
+                <div className="link">
+                    <NavLink activeStyle={{ color: '#ce3b5d' }} style={linkStyle} to="/home">Home</NavLink>
+                </div>
+                <div className="link">
+                    <NavLink activeStyle={{ color: '#ce3b5d' }} style={linkStyle} to="/foods">Foods</NavLink>
+                </div>
+            </nav>
         </header>
     );
 };
