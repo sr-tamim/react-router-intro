@@ -1,0 +1,16 @@
+
+
+#not-found-page{
+    margin: 150px 0;
+    text-align: center;
+    font-size: 9vw;
+    font-weight: bold;
+    font-family: 'Kaushan Script', sans-serif;
+}
+
+#not-found-page span{
+    background: linear-gradient(to right, #CD587E, #762F76);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    padding: 20px;
+}

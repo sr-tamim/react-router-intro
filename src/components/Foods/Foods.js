@@ -23,7 +23,7 @@ const Foods = () => {
 
     const { meals } = foods;
     return (
-        <div id="container">
+        <div id="foods-container">
             <h1 className="heading">
                 <span>Foods search</span><sub>made using React.js</sub>
             </h1>

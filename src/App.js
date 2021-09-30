@@ -6,6 +6,7 @@ import Foods from './components/Foods/Foods';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
+import NotFoundPage from './components/NotFoundPage/NotFoundPage';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/foods/:foodId" >
             <FoodDetails />
           </Route>
+          <Route exact path="*"> <NotFoundPage /> </Route>
         </Switch>
       </Router>
       <Footer />

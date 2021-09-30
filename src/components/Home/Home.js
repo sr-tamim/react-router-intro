@@ -4,7 +4,7 @@ import "./Home.css";
 
 const Home = () => {
     return (
-        <body>
+        <div id="body">
             <section id="home" style={{ background: "url('/img/home-back.jpg')" }}>
                 <div id="home-cover">
                     <div id="home-container">
@@ -105,7 +105,7 @@ const Home = () => {
                 </div>
             </section>
 
-        </body>
+        </div>
     );
 };
 
