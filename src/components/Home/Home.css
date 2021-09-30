@@ -149,12 +149,11 @@ section{
 }
 .flex-left{
     width: 100%;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 5%;
 }
 .flex-right{
     width: 100%;
-    padding: 0 5%;
+    padding: 5%;
 }
 .flex-container img{
     width: 100%;
