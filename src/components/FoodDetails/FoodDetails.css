@@ -45,6 +45,7 @@
     }
 }
 
+#foodName{ font-size: 40px;}
 #foodName, #foodCategory{
     text-align: center;
     margin-top: 0;
@@ -54,4 +55,24 @@
     background: linear-gradient(to right, #ff3c7d, #881b84);
     -webkit-text-fill-color: transparent;
     background-clip: text;
+}
+
+#ingredients{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 800;
+    margin: 20px 0;
+}
+#ingredients details{
+    text-align: left;
+    display: inline-block;
+    background: linear-gradient(to right, #ff3c7d, #881b84);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+#ingredients ul{
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 10px 0;
 }

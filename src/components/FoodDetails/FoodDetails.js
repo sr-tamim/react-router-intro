@@ -12,8 +12,16 @@ const FoodDetails = () => {
             fetch(url).then(r => r.json()).then(d => setFood(d.meals[0]));
         }, [foodId])
 
-    console.log(food);
 
+    const ingredients = {};
+    for (let i = 1; i <= 20; i++) {
+        const ingredient = food['strIngredient' + i];
+        const measure = food['strMeasure' + i];
+        if (!ingredient) { continue }
+        else if (!ingredients[ingredient]) {
+            ingredients[ingredient] = measure;
+        }
+    }
     return (
         <div id='food'>
             <h4 id="breadCrumb"><span>/ foods / {foodId}</span></h4>
@@ -22,6 +30,18 @@ const FoodDetails = () => {
             </div>
             <h1 id="foodName"><span>{food.strMeal}</span></h1>
             <h3 id="foodCategory"><span>{food.strCategory}</span></h3>
+            <div id="ingredients">
+                <details>
+                    <summary>Ingredients</summary>
+                    <ul>
+                        {
+                            Object.keys(ingredients).map(ingredient => <li
+                                key={Object.keys(ingredients).indexOf(ingredient)}>
+                                {ingredient} ({ingredients[ingredient]})</li>)
+                        }
+                    </ul>
+                </details>
+            </div>
         </div>
     );
 };

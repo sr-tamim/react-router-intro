@@ -12,7 +12,10 @@ const Food = (props) => {
             <div className="single-food">
                 <div className="food">
                     <img src={food.strMealThumb} alt="" />
-                    <h3>{food.strMeal}</h3>
+                    <h3>
+                        {food.strMeal} <br />
+                        <small>click to see details</small>
+                    </h3>
                 </div>
             </div>
         </NavLink>
