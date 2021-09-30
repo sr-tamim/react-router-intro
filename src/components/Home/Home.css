@@ -228,7 +228,7 @@ section{
 
 
 #dishes{
-    background: linear-gradient(white, whitesmoke, linen);
+    background: linear-gradient(white, rgba(250, 240, 230, 0.4));
     flex-direction: column;
     margin-bottom: 0;
 }
@@ -293,7 +293,7 @@ section{
     padding-right: 15px;
     margin-bottom: 40px;
 }
-.item-card a{
+.item-card .item-link{
     text-decoration: none;
     font-size: 18px;
     color: white;
@@ -303,41 +303,6 @@ section{
     border-radius: 20px;
 }
 
-
-
-
-footer{
-    background: linear-gradient(linen, #ffecda);
-    padding: 20px 0 0 0;
-}
-#footer-head{
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-footer h3{
-    text-align: center;
-    font-size: 25px;
-    font-family: 'Kaushan Script', cursive;
-    letter-spacing: 1px;
-    color: #5d5d5d;
-    margin-top: 0;
-}
-#footer-head img{
-    width: 65px;
-    height: 60px;
-    margin-right: 10px;
-}
-#footer-head #color1{color:#CD587E;}
-#footer-head #color2{color: #762F76;}
-#copyright{
-    font-size: 16px;
-    font-weight: 600;
-    color: #666666;
-    text-align: center;
-    padding: 50px 0;
-}
 
 @media screen and (min-width: 1024px) {
     section{

@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import "./Home.css";
 
 const Home = () => {
@@ -78,7 +79,7 @@ const Home = () => {
                             <p>
                                 Just order and enjoy our foods with great services.Your satisfaction is our accomplishment.
                             </p>
-                            <a href="http://sr-tamim.github.io/portfolio-v2">Order Now</a>
+                            <NavLink className="item-link" to="/foods/53014">Order Now</NavLink>
                         </div>
                     </div>
                     <div className="item-container">
@@ -88,7 +89,7 @@ const Home = () => {
                             <p>
                                 Just order and enjoy our foods with great services.Your satisfaction is our accomplishment.
                             </p>
-                            <a href="http://sr-tamim.github.io/portfolio-v2">Order Now</a>
+                            <NavLink className="item-link" to="/foods/53010">Order Now</NavLink>
                         </div>
                     </div>
                     <div className="item-container">
@@ -98,24 +99,12 @@ const Home = () => {
                             <p>
                                 Just order and enjoy our foods with great services.Your satisfaction is our accomplishment.
                             </p>
-                            <a href="http://sr-tamim.github.io/portfolio-v2">Order Now</a>
+                            <NavLink className="item-link" to="/foods/">Order Now</NavLink>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <footer>
-                <div id="footer-head">
-                    <img src="./img/footer-logo.png" alt='' />
-                    <h1>
-                        <span id="color1">Food</span> <span id="color2">Quest</span>
-                    </h1>
-                </div>
-                <h3>Good food choices are good investments</h3>
-                <div id="copyright">
-                    © All Rights Reserved by Food Quest
-                </div>
-            </footer>
         </body>
     );
 };

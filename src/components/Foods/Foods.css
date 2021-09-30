@@ -1,7 +1,6 @@
 
 #container{
-  position: relative;
-  top: 100px;
+  margin: 100px 0;
 }
 .foodContainer{
   display: flex;
